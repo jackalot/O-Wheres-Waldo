@@ -2,7 +2,7 @@ import React from "react";
 function BackGroundImage() {
   return (
     <div>
-      <img></img>
+      <img src="#" alt="background image"></img>
     </div>
   );
 }
