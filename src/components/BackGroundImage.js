@@ -1,3 +1,3 @@
 import React from "react";
-function Background() {}
-export default Background;
+function BackGroundImage() {}
+export default BackGroundImage;
