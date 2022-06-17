@@ -17,7 +17,7 @@ function App() {
     return () => {
       window.removeEventListener("mousemove", handleWindowMouseMove);
     };
-  });
+  }, []);
   return (
     <div className="App">
       <SelectedArea></SelectedArea>
