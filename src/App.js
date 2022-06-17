@@ -12,6 +12,7 @@ function App() {
         y: event.screenY,
       });
     };
+    window.addEventListener("mousemove", handleWindowMouseMove);
   });
   return (
     <div className="App">
