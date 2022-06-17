@@ -4,7 +4,15 @@ import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  useEffect(() => {});
+  const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
+  useEffect(() => {
+    const handleWindowMouseMove = (event) => {
+      setGlobalCoords({
+        x: event.screenX,
+        y: event.screenY,
+      });
+    };
+  });
   return (
     <div className="App">
       <SelectedArea></SelectedArea>
