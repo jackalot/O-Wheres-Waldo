@@ -1,5 +1,6 @@
 .selectedArea-container {
-   height: 10px;
-   width: 10px;
-   background-color: green;
+   height: 80px;
+   width: 80px;
+   border-style: dashed;
+  border-radius: 50%;
 }
