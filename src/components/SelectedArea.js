@@ -4,7 +4,7 @@ function SelectedArea(props) {
   return (
     <div
       style={{
-        position: "absoulte",
+        position: "absolute",
         left: `${props.xPosition - 20}px`,
         top: `${props.yPosition - 20}px`,
       }}
