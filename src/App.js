@@ -13,6 +13,10 @@ function App() {
       });
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleWindowMouseMove);
+    };
   });
   return (
     <div className="App">
