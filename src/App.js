@@ -20,7 +20,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <SelectedArea></SelectedArea>
+      <SelectedArea
+        xPosition={globalCoords.x}
+        yPosition={globalCoords.y}
+      ></SelectedArea>
       <BackgroundImage></BackgroundImage>
     </div>
   );
