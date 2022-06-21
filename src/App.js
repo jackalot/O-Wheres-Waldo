@@ -8,12 +8,14 @@ function App() {
   const [displaySelectedArea, setDisplaySelectedArea] = useState(false);
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
-      setGlobalCoords({
-        /* Subtracting these values centers the selection circle
+      if (displaySelectedArea === false) {
+        setGlobalCoords({
+          /* Subtracting these values centers the selection circle
          on one screen size, temporary fix */
-        x: event.screenX - 20,
-        y: event.screenY - 150,
-      });
+          x: event.screenX - 20,
+          y: event.screenY - 150,
+        });
+      }
       setMousePosition(globalCoords);
     };
     const handleMouseClick = (event) => {
