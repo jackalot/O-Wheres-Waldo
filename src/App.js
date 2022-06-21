@@ -15,7 +15,14 @@ function App() {
         y: event.screenY - 150,
       });
     };
-    const handleMouseClick = (event) => {};
+    const handleMouseClick = (event) => {
+      if (displaySelectedArea === false) {
+        setDisplaySelectedArea(true);
+      }
+      if (displaySelectedArea === true) {
+        setDisplaySelectedArea(false);
+      }
+    };
     window.addEventListener("mousemove", handleWindowMouseMove);
     window.addEventListener("click", handleMouseClick);
     return () => {
