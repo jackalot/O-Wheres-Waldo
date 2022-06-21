@@ -14,6 +14,7 @@ function App() {
         x: event.screenX - 20,
         y: event.screenY - 150,
       });
+      setMousePosition(globalCoords);
     };
     const handleMouseClick = (event) => {
       if (displaySelectedArea === false) {
@@ -27,8 +28,9 @@ function App() {
     window.addEventListener("click", handleMouseClick);
     return () => {
       window.removeEventListener("mousemove", handleWindowMouseMove);
+      window.removeEventListener("click", handleMouseClick);
     };
-  }, []);
+  }, [globalCoords, displaySelectedArea]);
   if (displaySelectedArea === false) {
     return (
       <div className="App">
