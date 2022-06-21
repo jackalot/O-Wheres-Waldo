@@ -29,15 +29,23 @@ function App() {
       window.removeEventListener("mousemove", handleWindowMouseMove);
     };
   }, []);
-  return (
-    <div className="App">
-      <SelectedArea
-        xPosition={globalCoords.x}
-        yPosition={globalCoords.y}
-      ></SelectedArea>
-      <BackgroundImage></BackgroundImage>
-    </div>
-  );
+  if (displaySelectedArea === false) {
+    return (
+      <div className="App">
+        <BackgroundImage></BackgroundImage>
+      </div>
+    );
+  } else {
+    return (
+      <div className="App">
+        <SelectedArea
+          xPosition={globalCoords.x}
+          yPosition={globalCoords.y}
+        ></SelectedArea>
+        <BackgroundImage></BackgroundImage>
+      </div>
+    );
+  }
 }
 
 export default App;
