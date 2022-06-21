@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
+  const [displaySelectedArea, setDisplaySelectedArea] = useState(false);
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
       setGlobalCoords({
@@ -14,8 +15,9 @@ function App() {
         y: event.screenY - 150,
       });
     };
+    const handleMouseClick = (event) => {};
     window.addEventListener("mousemove", handleWindowMouseMove);
-
+    window.addEventListener("click", handleMouseClick);
     return () => {
       window.removeEventListener("mousemove", handleWindowMouseMove);
     };
