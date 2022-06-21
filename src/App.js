@@ -8,6 +8,7 @@ function App() {
   const [displaySelectedArea, setDisplaySelectedArea] = useState(false);
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
+      //  To prevent the selection circle from moving with the mouse
       if (displaySelectedArea === false) {
         setGlobalCoords({
           /* Subtracting these values centers the selection circle
