@@ -5,8 +5,8 @@ function SelectedArea(props) {
     <div
       style={{
         position: "absolute",
-        left: `${props.xPosition - 20}px`,
-        top: `${props.yPosition - 20}px`,
+        left: `${props.xPosition}px`,
+        top: `${props.yPosition}px`,
       }}
       className="selectedArea-container"
     ></div>

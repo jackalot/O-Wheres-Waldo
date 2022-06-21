@@ -13,8 +13,8 @@ function App() {
         setGlobalCoords({
           /* Subtracting these values centers the selection circle
          on one screen size, temporary fix */
-          x: event.screenX - 20,
-          y: event.screenY - 150,
+          x: event.screenX - 40,
+          y: event.screenY - 170,
         });
       }
       setMousePosition(globalCoords);
