@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectedArea component Selected Area div is rendered 1`] = `
+<div>
+  <div
+    class="selectedArea-container"
+    style="position: absolute;"
+  />
+</div>
+`;
