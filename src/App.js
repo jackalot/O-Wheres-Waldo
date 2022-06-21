@@ -8,8 +8,10 @@ function App() {
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
       setGlobalCoords({
-        x: event.screenX,
-        y: event.screenY,
+        /* Subtracting these values centers the selection circle
+         on one screen size, temporary fix */
+        x: event.screenX - 20,
+        y: event.screenY - 150,
       });
     };
     window.addEventListener("mousemove", handleWindowMouseMove);
