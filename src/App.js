@@ -49,7 +49,7 @@ function App() {
           yPosition={globalCoords.y}
         ></SelectedArea>
         <CharacterList
-          xPosition={globalCoords.x + 80}
+          xPosition={globalCoords.x}
           yPosition={globalCoords.y}
           ourCharacters={[
             {

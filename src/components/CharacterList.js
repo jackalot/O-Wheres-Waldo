@@ -5,7 +5,8 @@ function CharacterList(props) {
     <div
       style={{
         position: "absolute",
-        left: `${props.xPosition}px`,
+        /** Add 80 as this needs to be next to the Selected Area component */
+        left: `${props.xPosition + 80}px`,
         top: `${props.yPosition}px`,
       }}
       className="character-list"
