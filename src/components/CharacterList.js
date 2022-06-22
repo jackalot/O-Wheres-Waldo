@@ -1,4 +1,5 @@
 import React from "react";
+import "../css-components/CharacterList.css";
 function CharacterList(props) {
   return (
     <div className="character-list">
