@@ -10,9 +10,11 @@ describe("CharacterList component", () => {
       name: "Dave",
     },
   ];
-  const { getByText } = render(
-    <CharacterList ourCharacters={characterArray}></CharacterList>
-  );
-  const johnTest = getByText("John");
-  expect(johnTest.textContent).toContain("John");
+  it("John renders as an LI element", () => {
+    const { getByText } = render(
+      <CharacterList ourCharacters={characterArray}></CharacterList>
+    );
+    const johnTest = getByText("John");
+    expect(johnTest.textContent).toContain("John");
+  });
 });
