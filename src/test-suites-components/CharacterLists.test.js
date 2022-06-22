@@ -1,4 +1,13 @@
 import { getByRole, render, screen } from "@testing-library/react";
 import CharacterList from "../components/CharacterList";
 
-describe("CharacterList component", () => {});
+describe("CharacterList component", () => {
+  const characterArray = [
+    {
+      name: "John",
+    },
+    {
+      name: "Dave",
+    },
+  ];
+});
