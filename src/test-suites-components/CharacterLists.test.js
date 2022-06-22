@@ -13,4 +13,6 @@ describe("CharacterList component", () => {
   const { getByText } = render(
     <CharacterList ourCharacters={characterArray}></CharacterList>
   );
+  const johnTest = getByText("John");
+  expect(johnTest.textContent).toContain("John");
 });
