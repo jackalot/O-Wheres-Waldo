@@ -1,5 +1,6 @@
 import React from "react";
 import "../css-components/SelectedArea.css";
+import CharacterList from "./CharacterList";
 function SelectedArea(props) {
   return (
     <div
@@ -9,7 +10,9 @@ function SelectedArea(props) {
         top: `${props.yPosition}px`,
       }}
       className="selectedArea-container"
-    ></div>
+    >
+      <CharacterList></CharacterList>
+    </div>
   );
 }
 
