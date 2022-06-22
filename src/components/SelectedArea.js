@@ -9,7 +9,13 @@ function SelectedArea(props) {
         top: `${props.yPosition}px`,
       }}
       className="selectedArea-container"
-    ></div>
+    >
+      <ul className="selectedArea-options">
+        <li>{props.character1}</li>
+        <li>{props.character2}</li>
+        <li>{props.character3}</li>
+      </ul>
+    </div>
   );
 }
 
