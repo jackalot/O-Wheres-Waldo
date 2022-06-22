@@ -8,8 +8,10 @@ function SelectedArea(props) {
         left: `${props.xPosition}px`,
         top: `${props.yPosition}px`,
       }}
-      className="selectedArea-container"
-    ></div>
+      className="selectedArea-OuterContainer"
+    >
+      <div className="selectedArea-OuterContainer"></div>
+    </div>
   );
 }
 
