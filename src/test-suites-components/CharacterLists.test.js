@@ -10,4 +10,7 @@ describe("CharacterList component", () => {
       name: "Dave",
     },
   ];
+  const { getByText } = render(
+    <CharacterList ourCharacters={characterArray}></CharacterList>
+  );
 });
