@@ -2,6 +2,7 @@ import "./App.css";
 import SelectedArea from "./components/SelectedArea";
 import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
+import CharacterList from "./components/CharacterList";
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
@@ -47,6 +48,18 @@ function App() {
           xPosition={globalCoords.x}
           yPosition={globalCoords.y}
         ></SelectedArea>
+        <CharacterList
+          xPosition={globalCoords.x + 80}
+          yPosition={globalCoords.y}
+          ourCharacters={[
+            {
+              name: "John",
+            },
+            {
+              name: "Dave",
+            },
+          ]}
+        ></CharacterList>
         <BackgroundImage></BackgroundImage>
       </div>
     );
