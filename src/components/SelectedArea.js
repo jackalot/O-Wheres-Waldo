@@ -10,7 +10,7 @@ function SelectedArea(props) {
       }}
       className="selectedArea-OuterContainer"
     >
-      <div className="selectedArea-OuterContainer"></div>
+      <div className="selectedArea-InnerContainer"></div>
     </div>
   );
 }
