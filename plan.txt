@@ -1,5 +1,4 @@
 Focus: Tackle the following problems one at a time:
-* the image has a copy right notice bottom right, we need a new one to use for the project.
 * The selection area isn't alligned properly when an image is in the webpage
 * We need to add firebase to the project
-- Highest priority: the image has a copy right notice bottom right, we need a new one to use for the project.
+- Highest priority: The selection area isn't alligned properly when an image is in the webpage
