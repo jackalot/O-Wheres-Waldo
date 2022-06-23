@@ -1,3 +1,5 @@
 Focus: Tackle the following problems one at a time:
-* We need to add firebase to the project
-- Highest priority: We need to add firebase to the project
+* We need to link the database and the project
+* we need to make the database have the background image
+* we need to make seperate images that the user can look for from the background image
+highest priority: We need to link the database and the project
