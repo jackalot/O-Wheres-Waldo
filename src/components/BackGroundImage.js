@@ -1,4 +1,5 @@
 import React from "react";
+import "../css-components/BackgroundImage.css";
 function BackGroundImage() {
   return (
     <div>
