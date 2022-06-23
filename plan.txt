@@ -1,4 +1,3 @@
 Focus: Tackle the following problems one at a time:
-* The selection area isn't alligned properly when an image is in the webpage
 * We need to add firebase to the project
-- Highest priority: The selection area isn't alligned properly when an image is in the webpage
+- Highest priority: 
