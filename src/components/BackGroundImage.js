@@ -3,7 +3,7 @@ function BackGroundImage() {
   return (
     <div>
       <img
-        src="../images/BirdsBeesMonkeesByDukepinball.png"
+        src={require("../images/BirdsBeesMonkeesByDukepinball.png")}
         alt="The Birds, The Bees, & The Monkees by Dukepinball"
       ></img>
     </div>
