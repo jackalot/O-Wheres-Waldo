@@ -3,6 +3,10 @@ import SelectedArea from "./components/SelectedArea";
 import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
 import CharacterList from "./components/CharacterList";
+import { getStorage, connectStorageEmulator } from "firebase/storage";
+const storage = getStorage();
+connectStorageEmulator(storage, "localhost", 9199);
+
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
