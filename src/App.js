@@ -4,9 +4,23 @@ import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
 import CharacterList from "./components/CharacterList";
 import { getStorage, connectStorageEmulator } from "firebase/storage";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 const storage = getStorage();
 connectStorageEmulator(storage, "localhost", 9199);
+const firebaseConfig = {
+  apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
+  authDomain: "o-where-s-waldo.firebaseapp.com",
+
+  projectId: "o-where-s-waldo",
+
+  storageBucket: "o-where-s-waldo.appspot.com",
+
+  messagingSenderId: "362458937758",
+
+  appId: "1:362458937758:web:eb3e24e0b0b8f355223e8f",
+};
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
