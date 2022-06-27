@@ -21,6 +21,7 @@ const firebaseConfig = {
 
   appId: "1:362458937758:web:eb3e24e0b0b8f355223e8f",
 };
+const app = initializeApp(firebaseConfig);
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
