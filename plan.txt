@@ -1,3 +1,1 @@
 Focus: Tackle the following problems one at a time:
-* we need to make the database have the background image
-highest priority: we need to make the database have the background image
