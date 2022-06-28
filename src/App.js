@@ -3,11 +3,9 @@ import SelectedArea from "./components/SelectedArea";
 import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
 import CharacterList from "./components/CharacterList";
-import { getStorage, connectStorageEmulator } from "firebase/storage";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-const storage = getStorage();
-connectStorageEmulator(storage, "localhost", 9199);
+import { getdoc } from "firebase/firestore/lite";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
@@ -22,6 +20,7 @@ const firebaseConfig = {
   appId: "1:362458937758:web:eb3e24e0b0b8f355223e8f",
 };
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
