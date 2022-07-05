@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../css-components/StartMenu.css";
 function StartMenu(props) {
   return (
     <div className="StartMenu-container">
