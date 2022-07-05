@@ -8,7 +8,7 @@ describe("StartMenu component", () => {
       charDir: "../images/Bear.png",
     },
     {
-      name: "Bird",
+      charName: "Bird",
       charDir: "../images/Bird.png",
     },
   ];
@@ -31,9 +31,9 @@ describe("StartMenu component", () => {
     expect(bearImage.alt).toContain("Bear");
   });
   it("The Bird image has the correct alt and src", () => {
-    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
-    const birdImage = document.querySelector("img");
-    expect(birdImage.src).toContain("images/Bird.png");
-    expect(birdImage.alt).toContain("Bird");
+    const { getByAltText } = render(
+      <StartMenu ourCharacters={characterArray}></StartMenu>
+    );
+    expect(getByAltText("Bird").src).toContain("images/Bird.png");
   });
 });
