@@ -16,5 +16,8 @@ describe("StartMenu component", () => {
     const { getByRole } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
     );
+    expect(getByRole("button").classList.contains("StartMenu-StartBtn")).toBe(
+      true
+    );
   });
 });
