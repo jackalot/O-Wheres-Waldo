@@ -3,8 +3,12 @@
 exports[`SelectedArea component Selected Area div is rendered 1`] = `
 <div>
   <div
-    class="selectedArea-container"
-    style="position: absolute;"
-  />
+    class="selectedArea-OuterContainer"
+  >
+    <div
+      class="selectedArea-InnerContainer"
+      style="position: absolute;"
+    />
+  </div>
 </div>
 `;
