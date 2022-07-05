@@ -15,6 +15,7 @@ function StartMenu(props) {
           {props.ourCharacters.map((character, char) => (
             <li key={char}>
               <img src={character.charDir} alt={character.charName}></img>
+              {character.charName}
             </li>
           ))}
         </ul>
