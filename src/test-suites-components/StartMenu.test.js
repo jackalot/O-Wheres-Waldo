@@ -20,5 +20,5 @@ describe("StartMenu component", () => {
       true
     );
   });
-  it("The Bear image renders", () => {});
+  it("The Bear image has the correct src", () => {});
 });
