@@ -1,1 +1,6 @@
-Focus: Tackle the following problems one at a time:
+Focus: Create the following for the start menu component
++ make it display a 'Start Game' button that will make the component disappear when clicked
++ make it have display Each each character the player should find 
+and display the images ( possibly make this an object )
++ test all of the above
++ create a css file for this component
