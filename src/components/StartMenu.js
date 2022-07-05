@@ -13,7 +13,9 @@ function StartMenu(props) {
       <div className="StartMenu-ImageList">
         <ul>
           {props.ourCharacters.map((character, char) => (
-            <li key={char}>{character.name}</li>
+            <li key={char}>
+              <img src={character.charDir} alt={character.charName}></img>
+            </li>
           ))}
         </ul>
       </div>
