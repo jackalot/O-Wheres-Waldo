@@ -20,5 +20,7 @@ describe("StartMenu component", () => {
       true
     );
   });
-  it("The Bear image has the correct src", () => {});
+  it("The Bear image has the correct src", () => {
+    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
+  });
 });
