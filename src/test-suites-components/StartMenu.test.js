@@ -22,5 +22,7 @@ describe("StartMenu component", () => {
   });
   it("The Bear image has the correct src", () => {
     render(<StartMenu ourCharacters={characterArray}></StartMenu>);
+    const bearImage = document.querySelector("img");
+    expect(bearImage.src).toContain("images/Bear.png");
   });
 });
