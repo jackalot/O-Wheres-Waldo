@@ -10,6 +10,7 @@ function StartMenu() {
         </p>
         <button className="StartMenu-StartBtn">Start!</button>
       </div>
+      <div className="StartMenu-ImageList"></div>
     </div>
   );
 }
