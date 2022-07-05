@@ -30,4 +30,10 @@ describe("StartMenu component", () => {
     const bearImage = document.querySelector("img");
     expect(bearImage.alt).toContain("Bear");
   });
+  it("The Bird image has the correct alt and src", () => {
+    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
+    const birdImage = document.querySelector("img");
+    expect(birdImage.src).toContain("images/Bird.png");
+    expect(birdImage.alt).toContain("Bird");
+  });
 });
