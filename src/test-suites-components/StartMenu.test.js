@@ -20,4 +20,5 @@ describe("StartMenu component", () => {
       true
     );
   });
+  it("The Bear image renders", () => {});
 });
