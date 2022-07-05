@@ -1,6 +1,6 @@
 import React from "react";
 
 function StartMenu() {
-  return <div></div>;
+  return <div className="StartMenu"></div>;
 }
 export default StartMenu;
