@@ -1,6 +1,6 @@
 import React from "react";
 
-function StartMenu() {
+function StartMenu(props) {
   return (
     <div className="StartMenu-container">
       <div className="StartMenu-ButtonContainer">
@@ -10,7 +10,13 @@ function StartMenu() {
         </p>
         <button className="StartMenu-StartBtn">Start!</button>
       </div>
-      <div className="StartMenu-ImageList"></div>
+      <div className="StartMenu-ImageList">
+        <ul>
+          {props.ourCharacters.map((character, char) => (
+            <li key={char}>{character.name}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
