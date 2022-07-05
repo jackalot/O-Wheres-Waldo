@@ -13,6 +13,8 @@ describe("StartMenu component", () => {
     },
   ];
   it("The StartGame button renders", () => {
-    const { getByRole } = render(<StartMenu></StartMenu>);
+    const { getByRole } = render(
+      <StartMenu ourCharacters={characterArray}></StartMenu>
+    );
   });
 });
