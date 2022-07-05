@@ -25,4 +25,9 @@ describe("StartMenu component", () => {
     const bearImage = document.querySelector("img");
     expect(bearImage.src).toContain("images/Bear.png");
   });
+  it("The Bear image has the correct alt", () => {
+    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
+    const bearImage = document.querySelector("img");
+    expect(bearImage.alt).toContain("Bear");
+  });
 });
