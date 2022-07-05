@@ -20,15 +20,11 @@ describe("StartMenu component", () => {
       true
     );
   });
-  it("The Bear image has the correct src", () => {
-    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
-    const bearImage = document.querySelector("img");
-    expect(bearImage.src).toContain("images/Bear.png");
-  });
-  it("The Bear image has the correct alt", () => {
-    render(<StartMenu ourCharacters={characterArray}></StartMenu>);
-    const bearImage = document.querySelector("img");
-    expect(bearImage.alt).toContain("Bear");
+  it("The Bear image has the correct alt and src", () => {
+    const { getByAltText } = render(
+      <StartMenu ourCharacters={characterArray}></StartMenu>
+    );
+    expect(getByAltText("Bear").src).toContain("images/Bear.png");
   });
   it("The Bird image has the correct alt and src", () => {
     const { getByAltText } = render(
