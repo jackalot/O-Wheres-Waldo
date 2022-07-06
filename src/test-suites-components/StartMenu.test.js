@@ -1,4 +1,10 @@
-import { getByRole, render, screen } from "@testing-library/react";
+import {
+  fireEvent,
+  getByRole,
+  getByTestId,
+  render,
+  screen,
+} from "@testing-library/react";
 import StartMenu from "../components/StartMenu";
 
 describe("StartMenu component", () => {
@@ -24,6 +30,8 @@ describe("StartMenu component", () => {
     const { getByRole } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
     );
+    const button = getByRole("button");
+    fireEvent.click(button);
   });
   it("The Bear image has the correct alt and src", () => {
     const { getByAltText } = render(
