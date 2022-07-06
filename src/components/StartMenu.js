@@ -1,6 +1,7 @@
 import React from "react";
 import "../css-components/StartMenu.css";
 function StartMenu(props) {
+  function changeClass() {}
   return (
     <div className="StartMenu-container">
       <div className="StartMenu-ButtonContainer">
@@ -8,7 +9,9 @@ function StartMenu(props) {
           The images on the right will be spread throughout the image you'll see
           after you click 'Start!', good luck and have fun!
         </p>
-        <button className="StartMenu-StartBtn">Start!</button>
+        <button className="StartMenu-StartBtn" onClick={changeClass}>
+          Start!
+        </button>
       </div>
       <div className="StartMenu-ImageList">
         <ul>
