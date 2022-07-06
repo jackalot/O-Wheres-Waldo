@@ -20,7 +20,11 @@ describe("StartMenu component", () => {
       true
     );
   });
-  it("The StartGame button hides the container div when clicked", () => {});
+  it("The StartGame button hides the container div when clicked", () => {
+    const { getByRole } = render(
+      <StartMenu ourCharacters={characterArray}></StartMenu>
+    );
+  });
   it("The Bear image has the correct alt and src", () => {
     const { getByAltText } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
