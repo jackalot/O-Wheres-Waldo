@@ -89,7 +89,18 @@ function App() {
   } else if (startedGame === false) {
     return (
       <div className="App">
-        <StartMenu></StartMenu>
+        <StartMenu
+          ourCharacters={[
+            {
+              charName: "Bear",
+              charDir: "../images/Bear.png",
+            },
+            {
+              charName: "Bird",
+              charDir: "../images/Bird.png",
+            },
+          ]}
+        ></StartMenu>
       </div>
     );
   }
