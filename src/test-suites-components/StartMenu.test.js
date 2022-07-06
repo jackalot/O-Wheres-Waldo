@@ -27,10 +27,12 @@ describe("StartMenu component", () => {
     );
   });
   it("The StartGame button hides the container div when clicked", () => {
+    function mockChangeClass() {}
     const { getByRole } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
     );
     const button = getByRole("button");
+    button.onclick(mockChangeClass);
     fireEvent.click(button);
   });
   it("The Bear image has the correct alt and src", () => {
