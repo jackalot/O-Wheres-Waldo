@@ -2,7 +2,7 @@ import React from "react";
 import "../css-components/StartMenu.css";
 function StartMenu(props) {
   function changeClass() {
-    const container = document.querySelector(".Startmenu-container");
+    const container = document.querySelector(".StartMenu-container");
     container.style.display = "none";
   }
   return (
