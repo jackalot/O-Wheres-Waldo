@@ -3,6 +3,7 @@ import SelectedArea from "./components/SelectedArea";
 import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
 import CharacterList from "./components/CharacterList";
+import StartMenu from "./components/StartMenu";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getdoc } from "firebase/firestore/lite";
