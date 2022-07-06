@@ -86,6 +86,12 @@ function App() {
         </div>
       );
     }
+  } else if (startedGame === false) {
+    return (
+      <div className="App">
+        <StartMenu></StartMenu>
+      </div>
+    );
   }
 }
 
