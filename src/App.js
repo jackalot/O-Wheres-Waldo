@@ -25,6 +25,7 @@ function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [globalCoords, setGlobalCoords] = useState({ x: 0, y: 0 });
   const [displaySelectedArea, setDisplaySelectedArea] = useState(false);
+  const [startedGame, setStartedGame] = useState(false);
   useEffect(() => {
     const handleWindowMouseMove = (event) => {
       //  To prevent the selection circle from moving with the mouse
@@ -53,34 +54,37 @@ function App() {
       window.removeEventListener("click", handleMouseClick);
     };
   }, [globalCoords, displaySelectedArea]);
-  if (displaySelectedArea === false) {
-    return (
-      <div className="App">
-        <BackgroundImage></BackgroundImage>
-      </div>
-    );
-  } else {
-    return (
-      <div className="App">
-        <SelectedArea
-          xPosition={globalCoords.x}
-          yPosition={globalCoords.y}
-        ></SelectedArea>
-        <CharacterList
-          xPosition={globalCoords.x}
-          yPosition={globalCoords.y}
-          ourCharacters={[
-            {
-              name: "John",
-            },
-            {
-              name: "Dave",
-            },
-          ]}
-        ></CharacterList>
-        <BackgroundImage></BackgroundImage>
-      </div>
-    );
+  /* this means we pressed the started game button */
+  if (startedGame === true) {
+    if (displaySelectedArea === false) {
+      return (
+        <div className="App">
+          <BackgroundImage></BackgroundImage>
+        </div>
+      );
+    } else {
+      return (
+        <div className="App">
+          <SelectedArea
+            xPosition={globalCoords.x}
+            yPosition={globalCoords.y}
+          ></SelectedArea>
+          <CharacterList
+            xPosition={globalCoords.x}
+            yPosition={globalCoords.y}
+            ourCharacters={[
+              {
+                name: "John",
+              },
+              {
+                name: "Dave",
+              },
+            ]}
+          ></CharacterList>
+          <BackgroundImage></BackgroundImage>
+        </div>
+      );
+    }
   }
 }
 
