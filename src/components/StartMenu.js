@@ -1,7 +1,10 @@
 import React from "react";
 import "../css-components/StartMenu.css";
 function StartMenu(props) {
-  function changeClass() {}
+  function changeClass() {
+    const container = document.querySelector(".Startmenu-container");
+    container.style.display = "none";
+  }
   return (
     <div className="StartMenu-container">
       <div className="StartMenu-ButtonContainer">
