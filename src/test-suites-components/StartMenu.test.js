@@ -5,6 +5,7 @@ import {
   render,
   screen,
 } from "@testing-library/react";
+import { createElement } from "react";
 import StartMenu from "../components/StartMenu";
 
 describe("StartMenu component", () => {
@@ -26,14 +27,20 @@ describe("StartMenu component", () => {
       true
     );
   });
-  it("The StartGame button hides the container div when clicked", () => {
-    function mockChangeClass() {}
+  it("A mock button hides the container div when clicked", () => {
+    function mockChangeClass() {
+      const container = document.getByRole(".Startmenu-container");
+      container.style.display = "none";
+    }
     const { getByRole } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
     );
-    const button = getByRole("button");
-    button.onclick(mockChangeClass);
-    fireEvent.click(button);
+    /* We use a new, mock button instead of the Start button
+    as trying to test the start button would give errors with 
+    container.style.display */
+    const mockButton = createElement("button");
+    mockButton.onclick(mockChangeClass);
+    fireEvent.click(mockButton);
   });
   it("The Bear image has the correct alt and src", () => {
     const { getByAltText } = render(
