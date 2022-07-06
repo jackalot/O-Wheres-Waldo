@@ -20,6 +20,7 @@ describe("StartMenu component", () => {
       true
     );
   });
+  it("The StartGame button hides the container div when clicked", () => {});
   it("The Bear image has the correct alt and src", () => {
     const { getByAltText } = render(
       <StartMenu ourCharacters={characterArray}></StartMenu>
