@@ -7,11 +7,21 @@ function StartMenu(props) {
   }
   return (
     <div className="StartMenu-container">
+      <table className="StarMenu-Table">
+        <tr>
+          <td className="StartMenu-HowToPlayTD">
+            <p className="StartMenu-HowToPlayText">
+              The images on the right will be spread throughout the image you'll
+              see after you click 'Start!', good luck and have fun!
+            </p>
+            <button className="StartMenu-StartBtn" onClick={changeClass}>
+              Start!
+            </button>
+          </td>
+          <td></td>
+        </tr>
+      </table>
       <div className="StartMenu-ButtonContainer">
-        <p className="StartMenu-HowToPlayText">
-          The images on the right will be spread throughout the image you'll see
-          after you click 'Start!', good luck and have fun!
-        </p>
         <button className="StartMenu-StartBtn" onClick={changeClass}>
           Start!
         </button>
