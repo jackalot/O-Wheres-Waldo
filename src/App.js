@@ -13,6 +13,16 @@ import { getdoc } from "firebase/firestore/lite";
 import bear from "./images/Bear.png";
 import bird from "./images/Bird.png";
 import fishInABowl from "./images/Fish_In_A_bowl.png";
+import floppyDisk from "./images/Floppy_Disk.png";
+import jellyFish from "./images/JellyFish.png";
+import keyLock from "./images/KeyLock.png";
+import paperBoat from "./images/PaperBoat.png";
+import pen from "./images/Pen.png";
+import pufferFIsh from "./images/PufferFIsh.png";
+import rollOfTape from "./images/Roll_of_Tape.png";
+import skeleton from "./images/Skeleton.png";
+import violin from "./images/Violin.png";
+import window from "./images/Window.png";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
