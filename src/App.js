@@ -22,7 +22,7 @@ import pufferFIsh from "./images/PufferFIsh.png";
 import rollOfTape from "./images/Roll_of_Tape.png";
 import skeleton from "./images/Skeleton.png";
 import violin from "./images/Violin.png";
-import window from "./images/Window.png";
+import windowImage from "./images/Window.png";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
@@ -157,7 +157,7 @@ function App() {
             },
             {
               charName: "window",
-              charDir: window,
+              charDir: windowImage,
             },
           ]}
         ></StartMenu>
