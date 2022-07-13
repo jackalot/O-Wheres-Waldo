@@ -5,4 +5,5 @@ Focus: Create the following for the start menu component
      be spread throughout the image you'll see after you click 'Start!', good luck and have
       fun!" to the left of the start menu.
     + put the character characters and character images on the right of the start menu.
+    + shrink the images so that they aren't huge
 }
