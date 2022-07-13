@@ -1,0 +1,6 @@
+.StartMenu-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: max-content;
+}
