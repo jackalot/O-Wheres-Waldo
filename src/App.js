@@ -119,6 +119,46 @@ function App() {
               charName: "Fish In A Bowl",
               charDir: fishInABowl,
             },
+            {
+              charName: "floppyDisk",
+              charDir: floppyDisk,
+            },
+            {
+              charName: "jellyFish",
+              charDir: jellyFish,
+            },
+            {
+              charName: "keyLock",
+              charDir: keyLock,
+            },
+            {
+              charName: "paperBoat",
+              charDir: paperBoat,
+            },
+            {
+              charName: "pen",
+              charDir: pen,
+            },
+            {
+              charName: "pufferFIsh",
+              charDir: pufferFIsh,
+            },
+            {
+              charName: "rollOfTape",
+              charDir: rollOfTape,
+            },
+            {
+              charName: "skeleton",
+              charDir: skeleton,
+            },
+            {
+              charName: "violin",
+              charDir: violin,
+            },
+            {
+              charName: "window",
+              charDir: window,
+            },
           ]}
         ></StartMenu>
       </div>
