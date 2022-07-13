@@ -7,6 +7,7 @@ import StartMenu from "./components/StartMenu";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getdoc } from "firebase/firestore/lite";
+import bear from "./images/Bear.png";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
@@ -93,7 +94,7 @@ function App() {
           ourCharacters={[
             {
               charName: "Bear",
-              charDir: "../images/Bear.png",
+              charDir: bear,
             },
             {
               charName: "Bird",
