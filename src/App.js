@@ -12,6 +12,7 @@ import { getdoc } from "firebase/firestore/lite";
 /* Images Player's will find */
 import bear from "./images/Bear.png";
 import bird from "./images/Bird.png";
+import fishInABowl from "./images/Fish_In_A_bowl.png";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
@@ -102,7 +103,11 @@ function App() {
             },
             {
               charName: "Bird",
-              charDir: "../images/Bird.png",
+              charDir: bird,
+            },
+            {
+              charName: "Fish In A Bowl",
+              charDir: fishInABowl,
             },
           ]}
         ></StartMenu>
