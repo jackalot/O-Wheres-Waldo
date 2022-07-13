@@ -1,13 +1,17 @@
 import "./App.css";
-import SelectedArea from "./components/SelectedArea";
-import BackgroundImage from "./components/BackGroundImage";
 import { useState, useEffect } from "react";
+/* Project Components */
 import CharacterList from "./components/CharacterList";
 import StartMenu from "./components/StartMenu";
+import SelectedArea from "./components/SelectedArea";
+import BackgroundImage from "./components/BackGroundImage";
+/* FireBase imports */
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getdoc } from "firebase/firestore/lite";
+/* Images Player's will find */
 import bear from "./images/Bear.png";
+import 
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
