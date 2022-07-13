@@ -18,24 +18,18 @@ function StartMenu(props) {
               Start!
             </button>
           </td>
-          <td></td>
+          <td>
+            <ul className="StartMenu-ImageList">
+              {props.ourCharacters.map((character, char) => (
+                <li key={char}>
+                  <img src={character.charDir} alt={character.charName}></img>
+                  {character.charName}
+                </li>
+              ))}
+            </ul>
+          </td>
         </tr>
       </table>
-      <div className="StartMenu-ButtonContainer">
-        <button className="StartMenu-StartBtn" onClick={changeClass}>
-          Start!
-        </button>
-      </div>
-      <div className="StartMenu-ImageList">
-        <ul>
-          {props.ourCharacters.map((character, char) => (
-            <li key={char}>
-              <img src={character.charDir} alt={character.charName}></img>
-              {character.charName}
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 }
