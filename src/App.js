@@ -11,7 +11,7 @@ import { getFirestore } from "firebase/firestore";
 import { getdoc } from "firebase/firestore/lite";
 /* Images Player's will find */
 import bear from "./images/Bear.png";
-import 
+import bird from "./images/Bird.png";
 const firebaseConfig = {
   apiKey: "AIzaSyDcns6SyNj5Qm-cqQuytVqjW8INo-b34zU",
 
