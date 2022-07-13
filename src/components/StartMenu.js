@@ -18,7 +18,7 @@ function StartMenu(props) {
               Start!
             </button>
           </td>
-          <td>
+          <td className="StartMenu-ImageTD">
             <ul className="StartMenu-ImageList">
               {props.ourCharacters.map((character, char) => (
                 <li key={char}>
