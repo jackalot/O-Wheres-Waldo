@@ -1,1 +1,9 @@
 Focus: Create the following for the start menu component
++ display the images correctly
++ style the start menu
+{
+    + put the instructions which say "The images on the right will
+     be spread throughout the image you'll see after you click 'Start!', good luck and have
+      fun!" to the left of the start menu.
+    + put the character characters and character images on the right of the start menu.
+}
